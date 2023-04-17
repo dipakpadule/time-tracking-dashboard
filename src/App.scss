@@ -156,3 +156,113 @@ $Pale-Blue: hsl(236, 100%, 87%);
   background-repeat: no-repeat;
   background-position: 14.2rem -0.3rem;
 }
+
+@media (min-width:85rem) or (min-width:90rem){
+  .time-tracker {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 15.81rem 10.31rem;
+    }
+      .tt-prof{
+      width: 15.94rem;
+      height: 32.375rem;
+      border-radius: 1rem;
+      background: $Dark-blue;
+      .profile-top{
+        background: $Blue;
+        height: 22.12rem;
+        border-radius: 1rem;
+      }
+      .profile-bottom{
+        height: 10.25rem;
+      }
+    }
+    .tt-sec{
+      width: 15.94rem;
+      height: 15.25rem;
+      .tt-sec-info{
+        height: 12.44rem;
+        .info-title{
+          p{
+            color: $Pale-Blue;
+            font-size: 20px;
+          }
+          img{
+            height: 5px;
+          }
+        }
+        .info-hrs{
+          flex-direction: column;
+          justify-content: space-between;
+          margin-top: 1rem;
+          align-items: flex-start;
+          strong{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .tt-profile {
+      grid-area: 1 / 1 / 3 / 2;
+      .profile-top{
+        padding: 2rem;
+        flex-direction: column;
+        img{
+          width: 5.25rem;
+          height: 5.25rem;
+          margin-bottom: 2.75rem;
+        }
+        .profile-name{
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          p{
+            color: $Pale-Blue;
+            margin-bottom: 0.5rem;
+          }
+          strong{
+            color: white;
+            font-size: 2rem;
+            font-weight: 300;
+          }
+        }
+      }
+      .profile-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+      }
+    }
+  
+    .tt-work { 
+      grid-area: 1 / 2 / 2 / 3; 
+      background-position: 9.5rem -0.3rem;
+    }
+    .tt-play { 
+      grid-area: 1 / 3 / 2 / 4; 
+      background-position: 9.5rem -0.3rem;
+    }
+    .tt-study { 
+      grid-area: 1 / 4 / 2 / 5;
+      background-position: 9.5rem -0.3rem;
+     }
+    .tt-exercise {
+       grid-area: 2 / 2 / 3 / 3;
+       background-position: 9.5rem -0.3rem;
+       }
+    .tt-social { 
+      grid-area: 2 / 3 / 3 / 4; 
+      background-position: 9.5rem -0.3rem;
+    }
+    .tt-selfcare { 
+      grid-area: 2 / 4 / 3 / 5;
+      background-position: 9.5rem -0.3rem; 
+    }
+}
